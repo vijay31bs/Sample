@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            var tamil = parseInt( prompt("enter mark tamil"));
+            var english = parseInt( prompt("enter mark english"));
+            var maths = parseInt(prompt("enter mark maths"));
+
+            var total = tamil+english+maths;
+            document.write("total marks:" +total+"<br>" );
+
+            var average = total/3;
+            document.write("average:" +average + "<br>");
+
+            if(tamil>=35 && english>=35 && maths>=35){
+                document.write("result  PASS" + "<br>");
+
+                if(average>=35 && average<60){
+                    document.write("grade C "+ "<br>");
+                }
+
+                else if(average>=60 && average<70){
+                    document.write("grade B" + "<br>");
+
+                }
+
+                else{
+                    document.write("grade A");
+                }
+            }
+            else{
+                document.write("result"+ FAIL +"<br>");
+            }
+            
+
+        </script>
+    </head>
+</html>
+
+
+
